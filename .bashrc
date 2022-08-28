@@ -17,3 +17,4 @@ alias cda='cd /u01/app/oracle/diag/rdbms/talentcdb/talentcdb/trace'
 alias ta='tail -f /u01/app/oracle/diag/rdbms/talentcdb/talentcdb/trace/alert_talentcdb.log'
 alias plus='sqlplus / as sysdba'
 
+export PS1="\[\e[32m\][\[\e[m\]\[\e[31m\]\u\[\e[m\]\[\e[33m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]:\[\e[36m\]\W\[\e[m\]\[\e[32m\]]\[\e[m\]\[\e[31m\]\\$\[\e[m\] "
