@@ -16,6 +16,7 @@ alias cdo='cd /u01/app/oracle/product/19.0.0/dbhome_1/network/admin'
 alias cda='cd /u01/app/oracle/diag/rdbms/talentcdb/talentcdb/trace'
 alias ta='tail -f /u01/app/oracle/diag/rdbms/talentcdb/talentcdb/trace/alert_talentcdb.log'
 alias plus='sqlplus / as sysdba'
+alias rmca='rman target / catalog rcat/foo@pdb_cat'
 
 #export PS1="\[\e[32m\][\[\e[m\]\[\e[31m\]\u\[\e[m\]\[\e[33m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]:\[\e[36m\]\W\[\e[m\]\[\e[32m\]]\[\e[m\]\[\e[31m\]\\$\[\e[m\] "
 
