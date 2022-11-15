@@ -38,7 +38,8 @@ alias rmca='rman target / catalog rcat/foo@pdb_cat'
 #export PS1="\[\033[30;1m\]\[\033(0\]l\[\033(B\]\[\033(0\]q\[\033(B\] (\[\033[31;1m\]\w\[\033[30;1m\]) ->\n\[\033(0\]m\[\033(B\]\[\033(0\]q\[\033(B\] \`if [ \$? = 0 ]; then echo \[\e[1\;30m\]\\$\[\e[1m\]; else echo \[\e[1\;31m\]\\$\[\e[0m\]; fi\` \[\033[0m\]"
 #export PS2="\[\033[30;1m\] ->\[\033(0\]q\[\033(B\] \[\033[0m\]"
 #fi
-
+#https://www.cyberciti.biz/tips/howto-linux-unix-bash-shell-setup-prompt.html
+#
 
 if [ -z "$DISPLAY" ]
 then
