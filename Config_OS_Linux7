@@ -1,0 +1,4 @@
+# /etc/yum.config
+  sslverify=0
+  
+ 
