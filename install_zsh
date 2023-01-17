@@ -1,0 +1,17 @@
+git config --global http.sslverify "false" 
+
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
+git clone https://github.com/hlissner/zsh-autopair ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-autopair
+
+curl -L https://raw.githubusercontent.com/sbugzu/gruvbox-zsh/master/gruvbox.zsh-theme > ~/.oh-my-zsh/custom/themes/gruvbox.zsh-theme
+cat >> ~/.zshrc <<EOF
+source ~/.oh-my-zsh/custom/plugins/zsh-autopair/autopair.zsh
+autopair-init
+
+plugins=(git zsh-autosuggestions web-search copypath copyfile zsh-syntax-highlighting zsh-completions)
+
+ZSH_THEME="gruvbox"
+SOLARIZED_THEME="dark
