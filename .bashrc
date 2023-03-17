@@ -17,6 +17,7 @@ alias cda='cd /u01/app/oracle/diag/rdbms/talentcdb/talentcdb/trace'
 alias ta='tail -f /u01/app/oracle/diag/rdbms/talentcdb/talentcdb/trace/alert_talentcdb.log'
 alias plus='sqlplus / as sysdba'
 alias rmca='rman target / catalog rcat/foo@pdb_cat'
+alias tmuxk='tmux kill-server'
 
 
 function memory () { df -h | tr -s ' ' | sed '/\/dev\/map/!d' | cut -d " " -f 4 ; }   
